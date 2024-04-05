@@ -121,6 +121,15 @@ void test_flipc() {
     cout << "Test20: " << (result1 == "aBCdefG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
 }
 
+void test_shift() {
+    string str = "abcdefg";
+    string result = versa::shift(str);
+
+    cout << "shift\n";
+    cout << "Test20: " << (result == "bcdefga" ? "Passed" : "Failed") << " , I: " << str << " , O: " << result << std::endl;
+
+}
+
 int main() {
     test_reverse();
     test_extract();
@@ -130,5 +139,6 @@ int main() {
     test_upper();
     test_lower();
     test_flipc();
+    test_shift();
     return 0;
 }
