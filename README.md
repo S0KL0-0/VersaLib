@@ -7,14 +7,14 @@ VersaLib is a lightweight C++ library containing various small utility functions
 ## Functions
 
 - **String Functions:**
-  - [count](Description/count.md)
-  - [reverse](Description/reverse.md)
-  - [extract](Description/extract.md)
-  - [find](Description/find.md)
-  - [replace](Description/replace.md)
-  - [upper](Description/upper.md)
-  - [lower](Description/lower.md)
-  - [flipc](Description/flipc.md)
-  - [shift](Description/shift.md)
+  - [count(str, char)](Description/count.md)
+  - [reverse(str)](Description/reverse.md)
+  - [extract(str, int/'s', int/'e')](Description/extract.md)
+  - [find(str, char)](Description/find.md)
+  - [replace(str, char)](Description/replace.md)
+  - [upper(str)](Description/upper.md)
+  - [lower(str)](Description/lower.md)
+  - [flipc(str)](Description/flipc.md)
+  - [shift(str)](Description/shift.md)
 - **Int Functions:**
-  - [factorial](Description/factorial.md)
+  - [factorial(int)](Description/factorial.md)
