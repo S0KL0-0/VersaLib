@@ -83,16 +83,16 @@ void test_upper() {
     string str1 = "abcdefg";
     string result1 = versa::upper(str1);
     cout << "upper\n";
-    cout << "Test14: " << (result1 == "ABCDEFG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
+    cout << "Test 14: " << (result1 == "ABCDEFG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
 
     string str2 = "abCDefG";
     string result2 = versa::upper(str2);
-    cout << "Test15: " << (result2 == "ABCDEFG" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
+    cout << "Test 15: " << (result2 == "ABCDEFG" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
 
 
     string str3 = "ABCDEFG";
     string result3 = versa::upper(str3);
-    cout << "Test16: " << (result3 == "ABCDEFG" ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result3 << std::endl;
+    cout << "Test 16: " << (result3 == "ABCDEFG" ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result3 << std::endl;
 
 }
 
@@ -100,16 +100,16 @@ void test_lower() {
     string str1 = "ABCDEFG";
     string result1 = versa::lower(str1);
     cout << "lower\n";
-    cout << "Test17: " << (result1 == "abcdefg" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
+    cout << "Test 17: " << (result1 == "abcdefg" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
 
     string str2 = "AbCDefG";
     string result2 = versa::lower(str2);
-    cout << "Test18: " << (result2 == "abcdefg" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
+    cout << "Test 18: " << (result2 == "abcdefg" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
 
 
     string str3 = "abcdefg";
     string result3 = versa::lower(str3);
-    cout << "Test19: " << (result3 == "abcdefg" ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result3 << std::endl;
+    cout << "Test 19: " << (result3 == "abcdefg" ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result3 << std::endl;
 
 }
 
@@ -118,7 +118,7 @@ void test_flipc() {
     string result1 = versa::flipc(str1);
 
     cout << "flipc\n";
-    cout << "Test20: " << (result1 == "aBCdefG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
+    cout << "Test 20: " << (result1 == "aBCdefG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
 }
 
 void test_shift() {
@@ -126,7 +126,16 @@ void test_shift() {
     string result = versa::shift(str);
 
     cout << "shift\n";
-    cout << "Test20: " << (result == "bcdefga" ? "Passed" : "Failed") << " , I: " << str << " , O: " << result << std::endl;
+    cout << "Test 21: " << (result == "bcdefga" ? "Passed" : "Failed") << " , I: " << str << " , O: " << result << std::endl;
+
+}
+
+void test_factorial() {
+    int integer = 12;
+    long long result = versa::factorial(integer);
+
+    cout << "factorial\n";
+    cout << "Test 22: " << (result == 479001600 ? "Passed" : "Failed") << " , I: " << integer << " , O: " << result << std::endl;
 
 }
 
@@ -140,5 +149,6 @@ int main() {
     test_lower();
     test_flipc();
     test_shift();
+    test_factorial();
     return 0;
 }

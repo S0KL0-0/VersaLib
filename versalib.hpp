@@ -10,6 +10,7 @@
 #include "Features/lower.hpp"
 #include "Features/flipc.hpp"
 #include "Features/shift.hpp"
+#include "Features/factorial.hpp"
 
 //#include "Features/   .hpp"
 
@@ -24,6 +25,7 @@ namespace versa {
   using ::lower;
   using ::flipc;
   using ::shift;
+  using ::factorial;
 }
 
 #endif // VERSALIB_HPP
