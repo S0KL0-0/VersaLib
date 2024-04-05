@@ -11,6 +11,7 @@
 #include "Features/flipc.hpp"
 #include "Features/shift.hpp"
 #include "Features/factorial.hpp"
+#include "Features/round.hpp"
 
 //#include "Features/   .hpp"
 
@@ -26,6 +27,7 @@ namespace versa {
   using ::flipc;
   using ::shift;
   using ::factorial;
+  using ::round;
 }
 
 #endif // VERSALIB_HPP

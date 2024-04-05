@@ -19,3 +19,4 @@ VersaLib is a lightweight C++ library containing various small utility functions
 ## Integer Functions
 
 - [Calculate Factorial](Description/factorial.md) (`factorial(int)`)
+- [Round float](Description/round.md) (`round(float)`)

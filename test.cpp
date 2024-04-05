@@ -139,6 +139,18 @@ void test_factorial() {
 
 }
 
+void test_round() {
+    float fpn1 = 19.435;
+    int result1 = versa::round(fpn1);
+
+    cout << "round\n";
+    cout << "Test 23: " << (result1 == 19 ? "Passed" : "Failed") << " , I: " << fpn1 << " , O: " << result1 << std::endl;
+
+    float fpn2 = 25;
+    int result2 = versa::round(fpn2);
+    cout << "Test 24: " << (result2 == 25 ? "Passed" : "Failed") << " , I: " << fpn2 << " , O: " << result2 << std::endl;
+}
+
 int main() {
     test_reverse();
     test_extract();
@@ -150,5 +162,6 @@ int main() {
     test_flipc();
     test_shift();
     test_factorial();
+    test_round();
     return 0;
 }
