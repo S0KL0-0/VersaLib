@@ -15,3 +15,4 @@ VersaLib is a lightweight C++ library containing various small utility functions
   - [upper](Description/upper.md)
   - [lower](Description/lower.md)
   - [flipc](Description/flipc.md)
+  - [shift](Description/shift.md)
