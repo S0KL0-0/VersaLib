@@ -33,24 +33,24 @@ void test_extract() {
 }
 
 void test_find() {
-    int result = find("abcd", 'b');
+    int result = versa::find("abcd", 'b');
     cout << "find\n";
     cout << "Test 7: " << (result == 1 ? "Passed" : "Failed") << " , I: abcd, 'b'" << " , O: " << result << std::endl;
 
-    result = find("ardf", 'g');
+    result = versa::find("ardf", 'g');
     cout << "Test 8: " << (result == -1 ? "Passed" : "Failed") << " , I: ardf, 'g'" << " , O: " << result << std::endl;
 }
 
 void test_count() {
     string str1 = "hello";
     char target1 = 'l';
-    int result1 = count(str1, target1);
+    int result1 = versa::count(str1, target1);
     cout << "count\n";
     cout << "Test 9: " << (result1 == 2 ? "Passed" : "Failed") << " , I: " << str1 << ", 'l'" << " , O: " << result1 << std::endl;
 
     string str2 = "world";
     char target2 = 'z';
-    int result2 = count(str2, target2);
+    int result2 = versa::count(str2, target2);
     cout << "Test 10: " << (result2 == 0 ? "Passed" : "Failed") << " , I: " << str2 << ", 'z'" << " , O: " << result2 << std::endl;
 }
 
@@ -115,10 +115,24 @@ void test_lower() {
 
 void test_flipc() {
     string str1 = "AbcDEFg";
-    string result1 = flipc(str1);
+    string result1 = versa::flipc(str1);
 
     cout << "flipc\n";
     cout << "Test20: " << (result1 == "aBCdefG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
+}
+
+void test_remove() {
+    string str1 = "AbcDEcFgc";
+    string result1 = versa::remove(str1, 'c');
+    
+    cout << "remove\n";
+    cout << "Test21: " << (result1 == "AbDEFg" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
+  
+    string str2 = "AbcDEcFgc";
+    string result2 = versa::remove(str2, 'z');
+    
+    cout << "Test22: " << (result2 == "AbcDEcFgc" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
+
 }
 
 int main() {
@@ -130,5 +144,6 @@ int main() {
     test_upper();
     test_lower();
     test_flipc();
+    test_remove();
     return 0;
 }
