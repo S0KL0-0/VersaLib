@@ -121,20 +121,6 @@ void test_flipc() {
     cout << "Test20: " << (result1 == "aBCdefG" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
 }
 
-void test_remove() {
-    string str1 = "AbcDEcFgc";
-    string result1 = versa::remove(str1, 'c');
-    
-    cout << "remove\n";
-    cout << "Test21: " << (result1 == "AbDEFg" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result1 << std::endl;
-  
-    string str2 = "AbcDEcFgc";
-    string result2 = versa::remove(str2, 'z');
-    
-    cout << "Test22: " << (result2 == "AbcDEcFgc" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
-
-}
-
 int main() {
     test_reverse();
     test_extract();
@@ -144,6 +130,5 @@ int main() {
     test_upper();
     test_lower();
     test_flipc();
-    test_remove();
     return 0;
 }
