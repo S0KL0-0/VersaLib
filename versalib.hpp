@@ -12,6 +12,7 @@
 #include "Features/shift.hpp"
 #include "Features/factorial.hpp"
 #include "Features/round.hpp"
+#include "Features/ixtract.hpp"
 
 //#include "Features/   .hpp"
 
@@ -28,6 +29,7 @@ namespace versa {
   using ::shift;
   using ::factorial;
   using ::round;
+  using ::ixtract;
 }
 
 #endif // VERSALIB_HPP

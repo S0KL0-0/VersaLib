@@ -150,6 +150,19 @@ void test_round() {
     cout << "Test 24: " << (result2 == 25 ? "Passed" : "Failed") << " , I: " << fpn2 << " , O: " << result2 << std::endl;
 }
 
+void test_ixtract() {
+    string str = "a1b2c3d4e5f6g7h8";
+    string result = versa::ixtract(str);
+
+    cout << "ixtract\n";
+    cout << "Test 25: " << (result == "12345678" ? "Passed" : "Failed") << " , I: " << str << " , O: " << result << std::endl;
+
+    string str2 = "abcdefg";
+    string result2 = versa::ixtract(str2);
+    cout << "Test 26: " << (result2 == "" ? "Passed" : "Failed") << " , I: " << str2 << " , O: " << result2 << std::endl;
+
+}
+
 int main() {
     test_reverse();
     test_extract();
@@ -160,6 +173,7 @@ int main() {
     test_lower();
     test_flipc();
     test_shift();
+    test_ixtract();
     test_factorial();
     test_round();
     return 0;
