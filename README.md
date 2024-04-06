@@ -4,7 +4,9 @@
 
 VersaLib is a lightweight C++ library containing various small utility functions for common tasks.
 
-## String Functions
+## Functions
+
+- [String](Description/string.md)
 
 - [Count Characters](Description/count.md) (`count(str, char)`)
 - [Reverse String](Description/reverse.md) (`reverse(str)`)
