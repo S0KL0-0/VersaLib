@@ -3,7 +3,7 @@
 
 #include <string>
 
-inline int find(const std::string& str, char target) {
+inline int find(const std::string& str, const char& target) {
     for (std::string::size_type i = 0; i < str.length(); ++i) {
         if (str[i] == target) {
             return static_cast<int>(i);

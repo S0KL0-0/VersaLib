@@ -1,0 +1,21 @@
+git checkout development
+
+Develop a function
+
+Add tests to test.cpp
+
+Run test.cpp
+
+If realy slow: optimize function
+
+git add .
+git commit -m "message"
+git push
+
+git push origin development:cleanup
+
+git checkout cleanup
+
+follow cleanup.txt
+
+git push origin cleanup:main

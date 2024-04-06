@@ -4,14 +4,22 @@
 #include <string>
 
 inline std::string reverse(const std::string& str) {
-  std::string reversedStr;
-  reversedStr.reserve(str.size());
+    std::string reversedStr(str);
 
-  for (auto it = str.rbegin(); it != str.rend(); ++it) {
-    reversedStr.push_back(*it);
-  }
+    size_t left = 0;
+    size_t right = reversedStr.size() - 1;
 
-  return reversedStr;
+    while (left < right) {
+        char temp = reversedStr[left];
+        reversedStr[left] = reversedStr[right];
+        reversedStr[right] = temp;
+
+        // Move pointers inward
+        ++left;
+        --right;
+    }
+
+    return reversedStr;
 }
 
 #endif // REVERSE_HPP

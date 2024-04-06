@@ -6,14 +6,13 @@ using std::string, std::cout;
 
 void test_reverse() {
     string str1 = "hello";
-    string str2 = "olleh";
     string result = versa::reverse(str1);
     cout << "reverse\n";
-    cout << "Test 1: " << (result == str2 ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result << std::endl;
+    cout << "Test 1: " << (result == "olleh" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result << std::endl;
 
     string str3 = "world";
     result = versa::reverse(str3);
-    cout << "Test 2: " << (result != str2 ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result << std::endl;
+    cout << "Test 2: " << (result != "world" ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result << std::endl;
 }
 
 void test_extract() {
