@@ -1,5 +1,7 @@
 git checkout development
 
+git pull origin development
+
 Develop a function
 
 Add tests to test.cpp
