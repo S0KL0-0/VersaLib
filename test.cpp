@@ -10,9 +10,9 @@ void test_reverse() {
     cout << "reverse\n";
     cout << "Test 1: " << (result == "olleh" ? "Passed" : "Failed") << " , I: " << str1 << " , O: " << result << std::endl;
 
-    string str3 = "world";
-    result = versa::reverse(str3);
-    cout << "Test 2: " << (result != "world" ? "Passed" : "Failed") << " , I: " << str3 << " , O: " << result << std::endl;
+    int int1 = 12345;
+    int result1 = versa::reverse(int1);
+    cout << "Test 2: " << (result1 == 54321 ? "Passed" : "Failed") << " , I: " << int1 << " , O: " << result1 << std::endl;
 }
 
 void test_extract() {
