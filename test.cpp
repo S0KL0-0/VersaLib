@@ -163,6 +163,35 @@ void test_ixtract() {
 
 }
 
+void test_insert() {
+    string str1 = "abcgh";
+    string str2 = "def";
+    int pos = 3;
+    string result = versa::insert(str1, pos, str2);
+    cout << "insert\n";
+    cout << "Test 27: " << (result == "abcdefgh" ? "Passed" : "Failed") << " , I: " << str1 << ", " << pos << ", " << str2 << " , O: " << result << std::endl;
+
+}
+
+void test_cut() {
+    string str = "abcdefgh";
+    int pos1 = 4;
+    string result1 = versa::cut(str, pos1);
+
+    cout << "cut\n";
+    cout << "Test 28: " << (result1 == "abcd" ? "Passed" : "Failed") << " , I: " << str << ", " << pos1 << " , O: " << result1 << std::endl;
+
+}
+
+void test_shuffle() {
+    string str = "abcdefgh";
+    int mode = 1;
+    string result = versa::shuffle(str, mode);
+
+    cout << "shuffle\n";
+    cout << "Test 29: " << (result == "ahbgcfde" ? "Passed" : "Failed") << " , I: " << str << ", " << mode << " , O: " << result << std::endl;
+}
+
 int main() {
     test_reverse();
     test_extract();
@@ -176,5 +205,8 @@ int main() {
     test_ixtract();
     test_factorial();
     test_round();
+    test_insert();
+    test_cut();
+    test_shuffle();
     return 0;
 }

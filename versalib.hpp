@@ -13,6 +13,9 @@
 #include "Features/factorial.hpp"
 #include "Features/round.hpp"
 #include "Features/ixtract.hpp"
+#include "Features/insert.hpp"
+#include "Features/cut.hpp"
+#include "Features/shuffle.hpp"
 
 //#include "Features/   .hpp"
 
@@ -30,6 +33,9 @@ namespace versa {
   using ::factorial;
   using ::round;
   using ::ixtract;
+  using ::insert;
+  using ::cut;
+  using ::shuffle;
 }
 
 #endif // VERSALIB_HPP
