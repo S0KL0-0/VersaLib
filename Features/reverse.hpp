@@ -22,4 +22,23 @@ inline std::string reverse(const std::string& str) {
     return reversedStr;
 }
 
+inline int reverse(const int& integer) {
+    std::string str(std::to_string(integer));
+
+    size_t left = 0;
+    size_t right = str.size() - 1;
+
+    while (left < right) {
+        char temp = str[left];
+        str[left] = str[right];
+        str[right] = temp;
+
+        // Move pointers inward
+        ++left;
+        --right;
+    }
+
+    return stoi(str);
+}
+
 #endif // REVERSE_HPP
