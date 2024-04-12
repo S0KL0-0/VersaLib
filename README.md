@@ -9,4 +9,5 @@ Library uses `versa` namespace.
 ## Functions
 
 - [String](Description/string.md)
+- [Char](Description/char.md)
 - [Int](Description/int.md)
