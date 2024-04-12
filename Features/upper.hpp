@@ -18,4 +18,14 @@ inline std::string upper(const std::string& str) {
 
 }
 
+inline char upper(const char& c) {
+
+    if (c >= 97 && c <= 122) {
+        return c - 32;
+    } else {
+        return c;
+    }
+
+}
+
 #endif // UPPER_HPP

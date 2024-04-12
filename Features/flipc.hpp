@@ -20,4 +20,16 @@ inline std::string flipc(const std::string& str) {
 
 }
 
+inline char flipc(const char& c) {
+
+    if (c >= 65 && c <= 90) { // upper case
+        return c - 32;
+    } else if (c >= 97 && c <= 122) { // lower case
+        return c - 32;
+    } else {
+        return c;
+    }
+
+}
+
 #endif // FLIPC_HPP
