@@ -22,10 +22,8 @@ inline char lower(const char& c) {
 
     if (c >= 65 && c <= 90) {
         return c + 32;
-    } else {
-        return c;
     }
-
+    return 32;
 }
 
 #endif // LOWER_HPP

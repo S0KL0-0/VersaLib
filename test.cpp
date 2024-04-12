@@ -73,16 +73,16 @@ void testLower() {
     test<string, string>("abcdefg", versa::lower("ABCDEFG"));
     test<string, string>("abcdefg", versa::lower("AbCDefG"));
     test<string, string>("abcdefg", versa::lower("abcdefg"));
-    test<char, char>('a', versa::upper('a'));
-    test<char, char>('a', versa::upper('A'));
+    test<char, char>('a', versa::lower('a'));
+    test<char, char>('a', versa::lower('A'));
 }
 
 void testFlipC() {
     cout << "flipc:\n";
 
     test<string, string>("aBCdefG", versa::flipc("AbcDEFg"));
-    test<char, char>('A', versa::upper('a'));
-    test<char, char>('a', versa::upper('A'));
+    test<char, char>('A', versa::flipc('a'));
+    test<char, char>('a', versa::flipc('A'));
 }
 
 void testShift() {
