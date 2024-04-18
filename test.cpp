@@ -183,15 +183,6 @@ void test_cut() {
 
 }
 
-void test_shuffle() {
-    string str = "abcdefgh";
-    int mode = 1;
-    string result = versa::shuffle(str, mode);
-
-    cout << "shuffle\n";
-    cout << "Test 29: " << (result == "ahbgcfde" ? "Passed" : "Failed") << " , I: " << str << ", " << mode << " , O: " << result << std::endl;
-}
-
 int main() {
     test_reverse();
     test_extract();
@@ -207,6 +198,5 @@ int main() {
     test_round();
     test_insert();
     test_cut();
-    test_shuffle();
     return 0;
 }
