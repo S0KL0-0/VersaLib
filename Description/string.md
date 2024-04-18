@@ -84,11 +84,11 @@ Convert all upper case characters to lower case in a string.
 
 `lower(string)`
 
-```
+```cpp
 string example = "HeLLo";
 cout << lower(example);
 ```
-```
+```cpp
 hello
 ```
 
@@ -98,11 +98,11 @@ Convert all lower case characters to upper case in a string.
 
 `lower(string)`
 
-```
+```cpp
 string example = "HeLLo";
 cout << upper(example);
 ```
-```
+```cpp
 HELLO
 ```
 
@@ -114,11 +114,11 @@ Upper case -> Lower case.
 
 `flipc(string)`
 
-```
+```cpp
 string example = "HeLLo";
 cout << flipc(example);
 ```
-```
+```cpp
 hEllO
 ```
 

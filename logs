@@ -20,4 +20,7 @@ Added function:
   ixtraction,
   insert,
   cut,
+  shuffle,
+Made lower, upper, flipc also accept char not only string
+Made reverse also accept int not only string
   
